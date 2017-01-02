@@ -11,9 +11,13 @@ Create new field like the picture below:
 register_setting( 'sunset-settings-group', 'twitter_handler', 'sunset_sanitize_twitter_handler' );
  
 
+
+```php
  //Sanitization settings
 function sunset_sanitize_twitter_handler( $input ){
 	$output = sanitize_text_field( $input );
 	$output = str_replace('@', '', $output);
 	return $output;
 }
+```
+
