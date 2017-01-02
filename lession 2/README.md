@@ -7,9 +7,9 @@ Create new field like the picture below:
 
  - New functions: Sanitization setting
 
-
+```php
 register_setting( 'sunset-settings-group', 'twitter_handler', 'sunset_sanitize_twitter_handler' );
- 
+```
 
 
 ```php
